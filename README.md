@@ -35,7 +35,6 @@ For production build, You need to run `gulp production`. That's it.
 
 ## Directory Structure
 ```
-├── README.md
 ├── app
 │   ├── assets
 │   │   ├── fonts
