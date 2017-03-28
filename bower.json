@@ -1,0 +1,74 @@
+{
+	"name": "frontentenda",
+	"description": "A full featured tool to create site from scratch.",
+	"main": "index.js",
+	"authors": [
+		"Aminul Islam"
+	],
+	"license": "MIT",
+	"homepage": "",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"bootstrap": "^3.3.7",
+		"jquery": "^3.1.1",
+		"font-awesome": "fontawesome#^4.7.0"
+	},
+	"overrides": {
+		"bootstrap": {
+			"main": [
+				"dist/css/bootstrap.css",
+				"dist/css/bootstrap.min.css",
+				"dist/js/bootstrap.js",
+				"dist/js/bootstrap.min.js",
+				"dist/fonts/*"
+			],
+			"normalize": {
+				"css": "*.css",
+				"js": "*.js",
+				"fonts": [
+					"*.eot",
+					"*.svg",
+					"*.otf",
+					"*.ttf",
+					"*.woff",
+					"*.woff2"
+				]
+			},
+			"dependencies": {}
+		},
+		"font-awesome": {
+			"main": [
+				"css/font-awesome.css",
+				"css/font-awesome.min.css",
+				"fonts/*"
+			],
+			"normalize": {
+				"css": "*.css",
+				"fonts": [
+					"*.eot",
+					"*.svg",
+					"*.otf",
+					"*.ttf",
+					"*.woff",
+					"*.woff2"
+				]
+			},
+			"dependencies": {}
+		},
+		"jquery": {
+			"main": [
+				"dist/jquery.js",
+				"dist/jquery.min.js"
+			],
+			"normalize": {
+				"./": "*.*"
+			}
+		}
+	}
+}

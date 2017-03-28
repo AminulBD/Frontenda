@@ -1,0 +1,29 @@
+{
+  "appInfo": {
+    "name": "Frontentenda",
+    "title": "A full featured tool to create site from scratch.",
+    "url": "https://github.com/AminulBD/frontentenda"
+  },
+  "socialLinks": [
+    {
+      "id": "twitter",
+      "title": "Twitter",
+      "url": "#"
+    },
+    {
+      "id": "facebook",
+      "title": "Facebook",
+      "url": "#"
+    },
+    {
+      "id": "dribbble",
+      "title": "Dribbble",
+      "url": "#"
+    },
+    {
+      "id": "instagram",
+      "title": "Instagram",
+      "url": "#"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap 101 Template</title>
+
+	{% include '../shared/app-icons.html' %}
+
+	<!-- build:css assets/css/dependencies.css -->
+	<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
+	<!-- endbuild -->
+
+	<link rel="stylesheet" href="assets/css/app.css" type="text/css">
+	{% block header %}{% endblock %}
+	
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body {% block attribute %}{% endblock %}>
+	
+	<div id="site">
+		{% block content %}
+		{% endblock %}
+	</div><!-- /#site -->
+
+	<!-- build:js assets/js/dependencies.js -->
+	<script src="dependencies/jquery/jquery.min.js"></script>
+	<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+	<!-- endbuild -->
+
+	<script src="assets/js/app.js"></script>
+	{% block footer %}{% endblock %}
+
+</body>
+</html>

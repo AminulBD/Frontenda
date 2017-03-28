@@ -1,0 +1,89 @@
+{	
+	"info": {
+		"name": "Frontentenda",
+		"slug": "frontentenda",
+		"description": "A full featured tool to create site from scratch.",
+		"version": "1.0.0",
+		"homepage": "https://github.com/AminulBD/frontentenda",
+		"author": "Aminul Islam",
+		"license": "MIT"
+	},
+	"root": {
+		"src": "./app",
+		"dest": "./public"
+	},
+
+	"tasks": {
+		"browserSync": {
+			"server": {
+				"baseDir": "public"
+			},
+			"port": 1574,
+			"ui": {
+				"port": 1575
+			}
+		},
+		"css": {
+			"src": "assets/sass",
+			"dest": "assets/css",
+			"autoprefixer": {
+				"browsers": ["last 15 versions"]
+			},
+			"sass": {
+				"indentedSyntax": true,
+				"outputStyle": "expanded",
+				"indentType": "tab",
+				"indentWidth": 1
+			},
+			"extensions": ["sass", "scss", "css"]
+		},
+		"images": {
+			"src": "assets/img",
+			"dest": "assets/img",
+			"extensions": ["jpg", "png", "svg", "gif"]
+		},
+		"scripts": {
+			"src": "assets/js",
+			"dest": "assets/js",
+			"extensions": ["js", "json"],
+			"configFile": "config.json"
+		},
+		"fonts": {
+			"src": "assets/fonts",
+			"dest": "assets/fonts",
+			"extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+		},
+		"media": {
+			"src": "media",
+			"dest": "./",
+			"extensions": ["jpg", "png", "svg", "gif", "mp3", "mp4", "php", "webm"]
+		},
+		"html": {
+			"src": "html",
+			"dest": "./",
+			"dataFile": "data/app.json",
+			"htmlmin": {
+				"collapseWhitespace": true,
+				"removeComments": true
+			},
+			"extensions": ["html", "nunj", "json"],
+			"excludeFolders": ["layouts", "macros", "shared", "sections", "components", "data"]
+		},
+		"bower": {
+			"src": "./bower_components",
+			"dest": "dependencies",
+			"json": "./bower.json"
+		},
+		"iconFont": {
+			"src": "assets/icons",
+			"dest": "assets/fonts",
+			"sassDest": "generated",
+			"extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+		},
+		"svgSprite": {
+			"src": "assets/icons",
+			"dest": "assets/img",
+			"extensions": ["svg"]
+		}
+	}
+}

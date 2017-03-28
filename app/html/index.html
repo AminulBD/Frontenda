@@ -1,0 +1,27 @@
+{% extends 'layouts/app.html' %}
+
+{# Page Title #}
+{% block title %}{{ appInfo.name + ' — ' + appInfo.title }}{% endblock %}
+
+{# Custom Code In Head #}
+{% block header %}{% endblock %}
+
+{# ID, Class or Attribute in body tag #}
+{% block attribute %}id="home-version-1" class="home-version-1" data-style="default"{% endblock %}
+
+{# Custom Code In Footer #}
+{% block head %}{% endblock %}
+
+{% block content %}
+	
+	<!--==========================-->
+	<!--=        Content         =-->
+	<!--==========================-->
+	{% include 'sections/content.html' %}
+	<!-- Social Icons as Font -->
+	{% include 'shared/social-icons-font.html' %}
+	<!-- Social Icons as SVG -->
+	{% include 'shared/social-icons-svg.html' %}
+	
+
+{% endblock %}
