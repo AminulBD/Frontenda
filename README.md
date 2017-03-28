@@ -34,6 +34,7 @@ Just clone this is repo to your project directory then run `yarn install` or `np
 For production build, You need to run `gulp production`. That's it.
 
 ## Directory Structure
+```
 ├── README.md
 ├── app
 │   ├── assets
@@ -106,3 +107,4 @@ For production build, You need to run `gulp production`. That's it.
 │   └── ....
 ├── package.json
 └── yarn.lock
+```
