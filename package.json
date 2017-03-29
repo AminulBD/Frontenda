@@ -6,6 +6,10 @@
 	"homepage": "https://github.com/AminulBD/frontentenda",
 	"author": "Aminul Islam",
 	"license": "MIT",
+	"engines": {
+		"node": "~6.9.1",
+		"npm": "~4.4.4"
+	},
 	"scripts": {
 		"postinstall": "bower install",
 		"start": "gulp",
