@@ -29,6 +29,9 @@ Here is few:
 	- Bower with bower normalize to organize
 
 ## Get start within a minute
+
+Before you go, Please install node `6.9.x`, npm `4.4.x` or yarn latest version and gulp `3.9.x` and bower `1.8.x` as global to continue.
+
 Just clone this is repo to your project directory then run `yarn install` or `npm install`. After the install success just run `gulp` or `npm start` or  `yarn start`.
 
 For production build, You need to run `gulp production`. That's it.
