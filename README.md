@@ -1,11 +1,11 @@
-# Frontentenda - Frontend development automation and task management
+# Frontenda - Frontend development automation and task management
 
 > This project inspired heavy inspired by [Gulp Starter](https://github.com/vigetlabs/gulp-starter).
 
 This tool is created for developing the site template for marketplace like: ThemeForest. I do not want to start everything by scratch and that's why this tool is created to save time and learning a lot.
 
 ## Features
-Frontentenda is came with many exciting and existing features in the Gulp Stater and few more to kick start.
+Frontenda is came with many exciting and existing features in the Gulp Stater and few more to kick start.
 
 Here is few:
 

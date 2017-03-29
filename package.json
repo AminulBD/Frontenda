@@ -1,9 +1,9 @@
 {
-	"name": "frontentenda",
+	"name": "frontenda",
 	"version": "1.0.0",
 	"description": "A full featured tool to create site from scratch.",
-	"repository": "https://github.com/AminulBD/frontentenda",
-	"homepage": "https://github.com/AminulBD/frontentenda",
+	"repository": "https://github.com/AminulBD/frontenda",
+	"homepage": "https://github.com/AminulBD/frontenda",
 	"author": "Aminul Islam",
 	"license": "MIT",
 	"engines": {

@@ -1,10 +1,10 @@
 {	
 	"info": {
-		"name": "Frontentenda",
-		"slug": "frontentenda",
+		"name": "Frontenda",
+		"slug": "frontenda",
 		"description": "A full featured tool to create site from scratch.",
 		"version": "1.0.0",
-		"homepage": "https://github.com/AminulBD/frontentenda",
+		"homepage": "https://github.com/AminulBD/frontenda",
 		"author": "Aminul Islam",
 		"license": "MIT"
 	},
