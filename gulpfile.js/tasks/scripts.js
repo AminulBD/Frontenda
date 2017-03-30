@@ -20,15 +20,15 @@ var paths = {
 	dest: path.join(config.root.dest, config.tasks.scripts.dest),
 	conf: path.join(config.root.src, config.tasks.scripts.src, config.tasks.scripts.configFile)
 }
-var files = []
-var getConf = JSON.parse(fs.readFileSync(paths.conf, 'utf8'))
-
-getConf.jsFiles.forEach(function(element) {
-	var element = path.join(config.root.src, config.tasks.scripts.src, element)
-	files.push(element)
-})
 
 var scriptsTask = function () {
+	var files = []
+	var getConf = JSON.parse(fs.readFileSync(paths.conf, 'utf8'))
+
+	getConf.jsFiles.forEach(function(item) {
+		var item = path.join(config.root.src, config.tasks.scripts.src, item)
+		files.push(item)
+	})
 	var prepare = gulp.src(files)
 		.on('error', handleErrors)
 		.pipe(sourcemaps.init())
