@@ -6,7 +6,7 @@ var getEnabledTasks = require('../lib/getEnabledTasks')
 var productionTask = function(cb) {
 	global.production = true
 	var tasks = getEnabledTasks('production')
-	gulpSequence('clean', tasks.assetTasks, tasks.codeTasks, 'media', cb)
+	gulpSequence('clean', tasks.assetTasks, 'scripts', tasks.codeTasks, 'server', cb)
 }
 
 gulp.task('production', productionTask)
