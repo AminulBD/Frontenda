@@ -33,7 +33,7 @@ var scriptsTask = function () {
 		.on('error', handleErrors)
 		.pipe(sourcemaps.init())
 		.pipe(concat('app.js'))
-		.pipe(header(banner(config)))
+		.pipe(header(banner()))
 
 	var compile = prepare
 		.pipe(sourcemaps.write('./'))

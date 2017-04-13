@@ -1,4 +1,6 @@
-module.exports = function banner(pkg) {
+var pkg 	= require('../config')
+
+module.exports = function banner() {
 	return ['/*!',
 			' * ' + pkg.info.name,
 			' * ' + pkg.info.description,

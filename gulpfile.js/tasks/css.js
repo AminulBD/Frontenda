@@ -26,7 +26,7 @@ var cssTask = function () {
 		.pipe(sass(config.tasks.css.sass))
 		.on('error', handleErrors)
 		.pipe(autoprefixer(config.tasks.css.autoprefixer))
-		.pipe(header(banner(config)))
+		.pipe(header(banner()))
 
 	var compile = css.pipe(sourcemaps.write('./'))
 
