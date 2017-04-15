@@ -1,2 +1,2 @@
 // Example 1
-console.log('example.js is loaded')
+console.log('example.js is loaded');

@@ -7,6 +7,8 @@ var clone 			= require('gulp-clone')
 var browserSync 	= require('browser-sync')
 var concat 			= require('gulp-concat')
 var uglify 			= require('gulp-uglify')
+var jshint 			= require('gulp-jshint')
+var stylish 		= require('jshint-stylish')
 var sourcemaps 		= require('gulp-sourcemaps');
 var handleErrors 	= require('../lib/handleErrors')
 var banner 			= require('../lib/banner')
@@ -32,6 +34,8 @@ var scriptsTask = function () {
 	var prepare = gulp.src(files)
 		.on('error', handleErrors)
 		.pipe(sourcemaps.init())
+		.pipe(jshint())
+		.pipe(jshint.reporter(stylish))
 		.pipe(concat('app.js'))
 		.pipe(header(banner()))
 
