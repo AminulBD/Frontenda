@@ -35,7 +35,8 @@
 				"indentType": "tab",
 				"indentWidth": 1
 			},
-			"extensions": ["sass", "scss", "css"]
+			"extensions": ["sass", "scss", "css"],
+			"sourceMapPath": "./"
 		},
 		"images": {
 			"src": "assets/img",

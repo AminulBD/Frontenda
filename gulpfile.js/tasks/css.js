@@ -28,7 +28,7 @@ var cssTask = function () {
 		.pipe(autoprefixer(config.tasks.css.autoprefixer))
 		.pipe(header(banner()))
 
-	var compile = css.pipe(sourcemaps.write('./'))
+	var compile = css.pipe(sourcemaps.write(config.tasks.css.sourceMapPath))
 
 	var minify = css.pipe(clone())
 		.pipe(cssnano({autoprefixer: false}))
